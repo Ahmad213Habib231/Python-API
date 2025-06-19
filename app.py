@@ -48,7 +48,7 @@ if not os.path.exists(MODEL_PATH):
     print(f"Model not found locally at {MODEL_PATH}. Downloading from Google Drive...")
     os.makedirs(MODEL_DIR, exist_ok=True)
     download_file_from_google_drive(GOOGLE_DRIVE_FILE_ID, MODEL_PATH)
-    print("✅ Model downloaded successfully.")
+    print("Model downloaded successfully.")
 
 print("✅ YOLO model is loading...")
 model = YOLO(MODEL_PATH)
